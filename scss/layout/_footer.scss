@@ -1,0 +1,14 @@
+@use "../abstracts" as *;
+
+.footer {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  margin-top: 12.8rem;
+
+  &__text {
+    &--bold {
+      font-weight: $font-weight-bold;
+    }
+  }
+}

@@ -4,11 +4,13 @@
   &:link,
   &:visited {
     padding: 1.6rem 2.4rem;
+    font-size: 1.6rem;
     font-weight: $font-weight-bold;
     text-transform: uppercase;
     border: none;
     border-radius: 0.8rem;
     text-decoration: none;
+    transition: all 0.2s;
   }
 
   &--secondary {

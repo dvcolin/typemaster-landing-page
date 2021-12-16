@@ -1,0 +1,130 @@
+@use "../abstracts" as *;
+
+.hero {
+  @include grid-12;
+  grid-column: 1 / -1;
+  grid-template-rows: 48rem;
+  margin-top: 8.4rem;
+  align-items: center;
+  position: relative;
+
+  &__content {
+    grid-column: 1 / 6;
+  }
+
+  &__paragraph {
+    font-size: 1.8rem;
+    margin-top: 2.4rem;
+  }
+
+  &__cta {
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+  }
+
+  &__release {
+    margin-left: 4rem;
+    text-transform: uppercase;
+    font-weight: $font-weight-bold;
+  }
+
+  &__image {
+    grid-column: 7 / -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+    border-radius: 0.8rem;
+  }
+
+  &__deco-box {
+    width: 12.5rem;
+    height: 50%;
+    background-color: $color-gray-light;
+    position: absolute;
+    top: 0;
+    right: -15.5rem;
+    border-radius: 0.8rem;
+  }
+}
+
+.description {
+  @include grid-12;
+  grid-column: 1 / -1;
+  grid-template-rows: 48rem;
+  align-items: center;
+  margin-top: 3rem;
+  position: relative;
+
+  &__image-box {
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.8rem;
+    height: 100%;
+
+    &--1 {
+      grid-column: 1 / 4;
+      background-image: linear-gradient(
+          to right,
+          rgba($color-primary, 1),
+          rgba($color-primary, 1)
+        ),
+        url(../assets/desktop/image-phone-and-keyboard.jpg);
+      background-blend-mode: multiply;
+    }
+
+    &--2 {
+      grid-column: 4 / 9;
+      background-image: url(../assets/desktop/image-glass-and-keyboard.jpg);
+    }
+  }
+
+  &__content {
+    grid-column: 10 / -1;
+  }
+
+  &__paragraph {
+    margin-top: 2.7rem;
+  }
+
+  &__deco-box {
+    width: 12.5rem;
+    height: 50%;
+    background-color: $color-gray-light;
+    position: absolute;
+    bottom: 0;
+    left: -15.5rem;
+    border-radius: 0.8rem;
+  }
+}
+
+.features {
+  @include grid-12;
+  grid-column: 1 / -1;
+  margin-top: 16.8rem;
+  align-content: start;
+
+  .feature {
+    grid-column: span 3;
+
+    &__icon-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 6.5rem;
+      height: 6.5rem;
+      border-radius: 0.8rem;
+      background-color: $color-primary;
+    }
+
+    &__heading {
+      margin-top: 4.8rem;
+      max-width: 80%;
+    }
+
+    &__paragraph {
+      margin-top: 2.4rem;
+    }
+  }
+}

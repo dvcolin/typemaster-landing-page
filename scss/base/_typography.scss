@@ -1,0 +1,25 @@
+@use "../abstracts" as *;
+
+%heading {
+  font-weight: $font-weight-black;
+  text-transform: uppercase;
+  color: $color-secondary;
+}
+
+.heading-1 {
+  @extend %heading;
+  font-size: $font-size-h1;
+  line-height: $line-height-h1;
+}
+
+.heading-2 {
+  @extend %heading;
+  font-size: $font-size-h2;
+  line-height: $line-height-h2;
+}
+
+.heading-3 {
+  @extend %heading;
+  font-size: $font-size-h3;
+  line-height: $line-height-h3;
+}
