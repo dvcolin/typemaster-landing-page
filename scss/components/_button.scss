@@ -11,6 +11,10 @@
     border-radius: 0.8rem;
     text-decoration: none;
     transition: all 0.2s;
+
+    @include mq(phone) {
+      padding: 1.2rem 1.6rem;
+    }
   }
 
   &--secondary {

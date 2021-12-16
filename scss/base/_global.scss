@@ -3,7 +3,6 @@
 html,
 body {
   width: 100%;
-  height: 100%;
 }
 
 html {
@@ -20,4 +19,13 @@ body {
   color: $color-gray;
   overflow-x: hidden;
   padding: 0 2.4rem;
+
+  @include mq(tablet) {
+    padding: 0 3.2rem;
+    overflow-x: visible;
+  }
+
+  @include mq(phone) {
+    padding: 0 2.4rem;
+  }
 }
